@@ -1,5 +1,5 @@
 # FxDispatcher
-An event dispatcher or thread governor for worker threads posting events to the FX Application thread.
+An event dispatcher or thread governor to manage worker threads posting events to the FX Application thread.
 The FxDispatcher prevents worker threads from overwhelming the FX Application thread by governing
 when events can be added to the FX Application thread.
 
