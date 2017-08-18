@@ -9,7 +9,7 @@ The size of the queue is user configurable.
 Method waitTillPurged is designed to wait until finished, similar to SwingUtilities.invokeAndWait().
 
 
-Benifits
+Benifits:
 * All locking is done by the JDK. Low cost maintenance. 
 * No additional Runnable objects created to support this interface.
 * Support concurrent event posting.
