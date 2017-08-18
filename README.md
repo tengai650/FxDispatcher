@@ -1,5 +1,5 @@
 # FxDispatcher
-Event dispatch or thread governor for worker threads sending events to the FX Application thread.
+Event dispatcher or thread governor for worker threads sending events to the FX Application thread.
 This prevents worker threads from overwhelming the FX Application thread with events. 
 
 An event cache is provided by a java.util.concurrent.BlockingQueue allowing threads to post events and continue on. 
