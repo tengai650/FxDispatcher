@@ -2,9 +2,11 @@
 Event dispatch or thread governer for worker threads sending events to the FX application thread.
 This prevents worker threads from overwhelming the FX Application thread with events. 
 
-An event cache is provide by a BlockingQueue allowing threads to post events and move on. 
+An event cache is provide by a BlockingQueue allowing threads to post events and continue on. 
 However, if the queue is full the posting thread is paused until a queue slot becomes available.
 The size of the queue is user configurable. 
+
+Method waitTillPurged is designed to wait until finished, similar to SwingUtilities.invokeAndWait().
 
 
 Benifits
