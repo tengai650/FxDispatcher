@@ -14,5 +14,5 @@ Benifits:
 * All locking is done by the JDK. Low cost maintenance. 
 * No additional Runnable objects created to support this interface.
 * Support concurrent event posting.
-* waitTillPurged method returns number of millseconds th FX Application took to purge the event queue.
+* waitTillPurged method returns number of millseconds the FX Application took to purge the event queue.
 * Can easily be updated to support Swing.
