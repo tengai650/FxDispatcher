@@ -5,7 +5,7 @@ when events can be added to the FX Application thread.
 
 An event cache is provided by a java.util.concurrent.BlockingQueue allowing threads to post events to the queue
 and continue on. However, if the queue is full the posting thread (and any subsequent posting thread) is paused until a
-queue slot becomes available. Once a slot becomes available the next pending worker thread adds its event to the
+queue slot becomes available. Once a slot becomes available the next pending worker thread puts its event to the
 blocking queue allowing the thread to continue. The size of the blocking queue is user configurable. 
 
 Method waitTillPurged is designed to wait until finished, similar to SwingUtilities.invokeAndWait().
